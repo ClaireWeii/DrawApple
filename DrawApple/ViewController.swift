@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     
     func pyramid(){
         for i in (1...number).reversed() {
-            for _ in stride(from: i, to: 0, by: -1) {
+            for _ in stride(from: i, to: 1, by: -1) {
                 content += "🖤"
             }
             for _ in 1...2*number+1-2*i {
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
     
     func multiPyramid(){
         for i in (1...number).reversed() {
-            for _ in stride(from: i, to: 0, by: -1) {
+            for _ in stride(from: i, to: 1, by: -1) {
                 content += "🖤"
             }
             for _ in 1...2*number+1-2*i {
