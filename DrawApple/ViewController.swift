@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var fruitLabel: UILabel!
     @IBOutlet weak var multiFruitSwitch: UISwitch!
+    @IBOutlet weak var numberSlider: UISlider!
     
     
     var content = ""
@@ -238,8 +239,21 @@ class ViewController: UIViewController {
         } else {
             changeShape()
         }
-     
         
     }
+    
+    @IBAction func resetAll(_ sender: Any) {
+
+        shapeSegmentedControl.selectedSegmentIndex = 0
+        fruitSegmentedControl.selectedSegmentIndex = 0
+        multiFruitSwitch.isOn = false
+        numberSlider.value = 1
+        number = 1
+        imageIndex = 0
+        fruitLabel.text = "🍎"
+        numberLabel.text = "1"
+
+    }
+    
 }
 

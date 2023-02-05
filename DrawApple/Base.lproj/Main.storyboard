@@ -80,6 +80,17 @@
                                     <action selector="changeMultiFruit:" destination="BYZ-38-t0r" eventType="valueChanged" id="oYc-SC-M4s"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9d-bJ-gsx">
+                                <rect key="frame" x="166" y="703" width="82" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reset">
+                                    <color key="baseBackgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LDv-Qb-tDl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -89,6 +100,7 @@
                         <outlet property="fruitSegmentedControl" destination="AkN-Sm-ptd" id="F9O-Bn-Pg7"/>
                         <outlet property="multiFruitSwitch" destination="7i2-9f-JaU" id="ubU-Od-MWI"/>
                         <outlet property="numberLabel" destination="v32-kU-CkM" id="bCG-6G-5if"/>
+                        <outlet property="numberSlider" destination="d71-5G-BjR" id="HLF-33-X3V"/>
                         <outlet property="shapeSegmentedControl" destination="4Yv-NX-7dS" id="Bxk-PP-ZPH"/>
                     </connections>
                 </viewController>
